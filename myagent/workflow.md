@@ -100,6 +100,8 @@ orchestrate가 만든 implementation/prompts/*.md를 열어서 맨 위에 한 �
 
 
 ## 실제 루틴
+`~/agent-os/scripts/project-install.sh --profile learning-reviewer --agent-os-commands true`
+
 1. shape-spec (질문/경계/패턴 후보) 
 2. write-spec (spec.md에 패턴 1개 강제 명시) 
 3. create-tasks (라벨링 + 테스트 포함) 
