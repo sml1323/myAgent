@@ -14,7 +14,7 @@ Agent OS 기본 사이클은:
     - tech-stack.md: 파이썬 버전/테스트툴/포매터/기본 라이브러리 등
 
 ```text
-@agent-os/commands/plan-product/1-plan-product.md run this
+@agent-os/commands/plan-product/1-product-concept.md run this
 @agent-os/commands/plan-product/2-create-mission.md run this
 @agent-os/commands/plan-product/3-create-roadmap.md run this
 @agent-os/commands/plan-product/4-create-tech-stack.md run this
@@ -36,8 +36,8 @@ Agent OS 기본 사이클은:
 
 
 ```text
-@agent-os/commands/shape-spec/1-shape-spec.md run this
-@agent-os/commands/shape-spec/2-research-spec.md run this
+@agent-os/commands/shape-spec/1-initialize-spec.md run this
+@agent-os/commands/shape-spec/2-shape-spec.md run this
 ```
 
 ## 3. Write Spec (요구사항 → 명세서 spec.md로 고정)
@@ -63,10 +63,18 @@ Agent OS 기본 사이클은:
         - 각 task에 라벨 붙이기: [N] 네이밍, [S] Strategy, [T] Template, [F] Factory, [TEST]
         - 한 번에 패턴 3개 다 넣지 말고 1개만 강제 적용(나머지는 “선택 리팩토링” task로)
 
+통합 실행:
+
 ```text
 @agent-os/commands/create-tasks/create-tasks.md run this
 ```
-마찬가지로 번호 파일을 순차적으로 실행
+
+단계별 실행 (파일명 확인됨):
+
+```text
+@agent-os/commands/create-tasks/1-get-spec-requirements.md run this
+@agent-os/commands/create-tasks/2-create-tasks-list.md run this
+```
 
 ## 5. Implement Tasks Orchestrate Tasks
 
@@ -77,7 +85,12 @@ Implement-tasks는 “tasks.md를 따라 작업을 진행하고 체크한다”�
 ```text
 @agent-os/commands/implement-tasks/implement-tasks.md run this
 ```
-
+단계별 실행
+```text
+@agent-os/commands/implement-tasks/1-determine-tasks.md run this
+@agent-os/commands/implement-tasks/2-implement-tasks.md run this
+@agent-os/commands/implement-tasks/3-verify-implementation.md run this
+```
 추가 지시:
 - 코드는 내가 작성한다.
 - 너는 각 task마다 (1) 설계 체크 (2) 네이밍 체크 (3) 패턴 적용 체크 (4) 최소 테스트 제안만 해라.
